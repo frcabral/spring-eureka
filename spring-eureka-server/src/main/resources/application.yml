@@ -1,7 +1,9 @@
 server:
-  port: 8181
+  port: 8761
+eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
+  server:
     serviceUrl:
-      defaultZone: http://localhost:8181
+      defaultZone: http://localhost:8761
